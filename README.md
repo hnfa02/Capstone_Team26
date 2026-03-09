@@ -1,1 +1,1 @@
-# Capstone_Team26
+# Capstone Team 26: Team Anti-Sugar Rush
