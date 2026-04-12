@@ -8,3 +8,20 @@ Repo Structure:
 * tbd
   * final agent jupyter notebook
   * glucose prediction model jupyter notebook
+* sugar_rush_agent: streamlit app
+  * app.py: streamlit UI
+  * config/
+    * settings.py: API keys, retry settings
+  * agents/: all agents
+  * tools/: all tools for agents
+  * models/: glucose prediction model
+  * core/
+    * controller.py: main function to run agent with safety agent + formatter agent
+    * logging.py: logging functions
+    * utils.py: helper functions
+  * data/: MET data
+  * logs/: log data
+
+**Streamlit App Usage**
+1. in .env file add api keys
+2. run app.py then run streamlit command provided ex/ "streamlit run app.py"
