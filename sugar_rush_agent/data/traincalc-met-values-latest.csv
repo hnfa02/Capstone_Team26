@@ -1,0 +1,232 @@
+﻿Description,MET,vo2_ml_kg_min,kcal_per_hour_70kg,Intensity,Category,Subcategory,"Original Code"
+"Walking (very slow, <3.2 km/h / <2.0 mph, strolling)",2.3,8,161,Light,Walking,"Walking pace",17151
+"Walking (slow, ~3.2–3.9 km/h / 2.0–2.4 mph)",2.8,9.8,196,Light,Walking,"Walking pace",17152
+"Walking (easy, ~4.0 km/h / 2.5 mph)",3,10.5,210,Moderate,Walking,"Walking pace",17170
+"Walking (moderate, ~4.5–5.5 km/h / 2.8–3.4 mph)",3.8,13.3,266,Moderate,Walking,"Walking pace",17190
+"Walking (self-selected speed, general)",4,14,280,Moderate,Walking,"Walking pace",17255
+"Walking (brisk, ~5.6–6.3 km/h / 3.5–3.9 mph, exercise walk)",4.8,16.8,336,Moderate,Walking,"Walking pace",17200
+"Walking (very brisk, ~6.4–7.1 km/h / 4.0–4.4 mph)",5.5,19.3,385,Moderate,Walking,"Walking pace",17220
+"Walking (very fast, ~7.2–7.9 km/h / 4.5–4.9 mph)",7,24.5,490,Vigorous,Walking,"Walking pace",17230
+"Walking (speed walking, ~8.0–8.9 km/h / 5.0–5.5 mph)",8.5,29.8,595,Vigorous,Walking,"Walking pace",17231
+"Walking (household / around home)",2.3,8,161,Light,Walking,"Daily walking",17150
+"Walking (to/from car, bus, short errands)",2.5,8.8,175,Light,Walking,"Daily walking",17161
+"Walking the dog",3,10.5,210,Moderate,Walking,"Daily walking",17165
+"Walking to work / class",4,14,280,Moderate,Walking,"Daily walking",17270
+"Walking, treadmill, 1.0 mph, 0% grade (1.6 km/h)",2.3,8,161,Light,Walking,Treadmill,17343
+"Walking, treadmill, 1.2 to 1.9 mph, 0% grade (1.9 to 3.0 km/h)",2.8,9.8,196,Light,Walking,Treadmill,17346
+"Walking, treadmill, 2.0 to 2.4 mph (3.2 to 3.9 km/h), 0% grade",3,10.5,210,Moderate,Walking,Treadmill,17349
+"Walking, treadmill, 2.5 to 2.9 mph (4.0 to 4.7 km/h), 0% grade",3.5,12.3,245,Moderate,Walking,Treadmill,17352
+"Walking with day pack (easy, level)",3.5,12.3,245,Moderate,Walking,Hiking,17011
+"Walking, treadmill, 3.0 to 3.4 mph (4.8 to 5.5 km/h), 0% grade",3.8,13.3,266,Moderate,Walking,Treadmill,17355
+"Hiking (easy / slow, no load)",3.8,13.3,266,Moderate,Walking,Hiking,17081
+"Walking, treadmill, 3.5 to 3.9 mph (5.6 to 6.3 km/h), 0% grade",4.8,16.8,336,Moderate,Walking,Treadmill,17358
+"Hiking (normal pace, no load)",5.3,18.6,371,Moderate,Walking,Hiking,17082
+"Walking, treadmill, 4.0 to 4.4 mph (6.4 to 7.1 km/h), 0% grade",5.8,20.3,406,Moderate,Walking,Treadmill,17361
+"Hiking (cross-country / general)",6,21,420,Vigorous,Walking,Hiking,17080
+"Walking, treadmill, 4.5 to 4.9 mph (7.2 to 7.9 km/h), 0% grade",6.8,23.8,476,Vigorous,Walking,Treadmill,17364
+"Backpacking (general)",7,24.5,490,Vigorous,Walking,Hiking,17010
+"Hiking with day pack (organized / faster)",7.8,27.3,546,Vigorous,Walking,Hiking,17012
+"Walking, treadmill, 5.0 to 5.5 mph (8.0 to 8.9 km/h), 0% grade",8.3,29.1,581,Vigorous,Walking,Treadmill,17367
+"Hill walking (5–20% grade, very slow)",5,17.5,350,Moderate,Walking,Hills,17032
+"Walking uphill / incline (1–5% grade, moderate–brisk)",5.3,18.6,371,Moderate,Walking,Hills,17034
+"Walking uphill / incline (6–10% grade)",7,24.5,490,Vigorous,Walking,Hills,17035
+"Walking uphill / incline (11–20% grade)",8.8,30.8,616,Vigorous,Walking,Hills,17036
+"Descending stairs (down only)",3.5,12.3,245,Moderate,Walking,Stairs,17070
+"Stair climbing (slow pace)",4.5,15.8,315,Moderate,Walking,Stairs,17133
+"Stair climbing (general)",6.8,23.8,476,Vigorous,Walking,Stairs,17131
+"Stairs (up + down combined)",7.5,26.3,525,Vigorous,Walking,Stairs,17138
+"Stair climbing (fast pace)",9.3,32.6,651,"Very Vigorous",Walking,Stairs,17134
+"Walking while carrying a child (~4.5 kg / 10 lb)",2.3,8,161,Light,Walking,"Carrying load",17021
+"Carrying light load (2–6 kg / 4–13 lb, level ground)",4,14,280,Moderate,Walking,"Carrying load",17016
+"Carrying heavy load (7–70 kg / 15–154 lb, slow pace)",4.5,15.8,315,Moderate,Walking,"Carrying load",17018
+"Nordic walking (moderate pace)",4.3,15,301,Moderate,Walking,"Nordic walking",17302
+"Nordic walking (faster pace)",5.3,18.6,371,Moderate,Walking,"Nordic walking",17304
+"Nordic walking uphill (moderate)",8.8,30.8,616,Vigorous,Walking,"Nordic walking",17310
+"Running (easy, ~8:05 min/km / 13:00 min/mile, ~6.4 km/h / 4.0 mph)",6.5,22.8,455,Vigorous,Running,Pace-based,12028
+"Running (steady, ~7:27 min/km / 12:00 min/mile, ~8.0 km/h / 5.0 mph)",8.5,29.8,595,Vigorous,Running,Pace-based,12030
+"Running (~6:13 min/km / 10:00 min/mile, ~9.7 km/h / 6.0 mph)",9.3,32.6,651,"Very Vigorous",Running,Pace-based,12050
+"Running (~5:20 min/km / 8:30 min/mile, ~11.3 km/h / 7.0 mph)",11,38.5,770,"Very Vigorous",Running,Pace-based,12070
+"Running (~4:40 min/km / 7:30 min/mile, ~12.9 km/h / 8.0 mph)",12,42,840,"Very Vigorous",Running,Pace-based,12090
+"Running (~4:02 min/km / 6:30 min/mile, ~14.5 km/h / 9.0 mph)",13,45.5,910,"Very Vigorous",Running,Pace-based,12110
+"Running (~3:44 min/km / 6:00 min/mile, ~16.1 km/h / 10.0 mph)",14.8,51.8,1036,"Very Vigorous",Running,Pace-based,12120
+"Running (~3:23 min/km / 5:30 min/mile, ~17.7 km/h / 11.0 mph)",16.8,58.8,1176,"Very Vigorous",Running,Pace-based,12130
+"Trail / cross-country running",9.3,32.6,651,"Very Vigorous",Running,Terrain,12140
+"Running stairs (up)",15,52.5,1050,"Very Vigorous",Running,Terrain,12170
+"Running uphill (5% incline, ~7.2 km/h / 4.5 mph)",10.3,36.1,721,"Very Vigorous",Running,Incline,12255
+"Running uphill (5% incline, ~11.3 km/h / 7.0 mph)",15.5,54.3,1085,"Very Vigorous",Running,Incline,12265
+"Jogging (self-selected pace)",7.5,26.3,525,Vigorous,Running,General,12020
+"Running (self-selected pace)",10.5,36.8,735,"Very Vigorous",Running,General,12145
+"Running with backpack (light pack, ~9.7–11.1 km/h / 6.0–6.9 mph)",9.5,33.3,665,"Very Vigorous",Running,Other,12510
+"Running with stroller (outdoors, ~8.0 km/h / 5.0 mph)",10,35,700,"Very Vigorous",Running,Other,12593
+"Cycling (very easy, ~9 km/h / 5.5 mph)",3.5,12.3,245,Moderate,Cycling,Outdoor,01018
+"Cycling (easy, <16 km/h / <10 mph)",4,14,280,Moderate,Cycling,Outdoor,01010
+"Cycling (dirt / farm road, moderate)",5.8,20.3,406,Moderate,Cycling,Outdoor,01013
+"Cycling (light, 16–19 km/h / 10–12 mph)",6.8,23.8,476,Vigorous,Cycling,Outdoor,01020
+"Cycling commute (self-selected pace)",6.8,23.8,476,Vigorous,Cycling,Outdoor,01011
+"Cycling (moderate, 19–22 km/h / 12–14 mph)",8,28,560,Vigorous,Cycling,Outdoor,01030
+"Cycling (vigorous, 22–26 km/h / 14–16 mph)",10,35,700,"Very Vigorous",Cycling,Outdoor,01040
+"Cycling (very fast, 26–31 km/h / 16–19 mph)",12,42,840,"Very Vigorous",Cycling,Outdoor,01050
+"Cycling (racing, >32 km/h / >20 mph)",16.8,58.8,1176,"Very Vigorous",Cycling,Outdoor,01060
+"Mountain biking (general)",8.5,29.8,595,Vigorous,Cycling,Mountain,01009
+"Mountain biking (uphill, vigorous)",14,49,980,"Very Vigorous",Cycling,Mountain,01003
+"Mountain biking (competitive racing)",16,56,1120,"Very Vigorous",Cycling,Mountain,01004
+"E-bike (high assist)",4,14,280,Moderate,Cycling,E-bike,01088
+"E-bike (light assist)",6,21,420,Vigorous,Cycling,E-bike,01084
+"E-bike (minimal assist / no support)",6.8,23.8,476,Vigorous,Cycling,E-bike,01080
+"Stationary bike (very light, 25–30 W)",3.5,12.3,245,Moderate,Cycling,Indoor,01210
+"Stationary bike (light–moderate, ~60 W)",5,17.5,350,Moderate,Cycling,Indoor,01216
+"Stationary bike (moderate, 101–125 W)",6.8,23.8,476,Vigorous,Cycling,Indoor,01224
+"Stationary bike (vigorous, 126–150 W)",8,28,560,Vigorous,Cycling,Indoor,01228
+"Stationary bike (very vigorous, 151–199 W)",10.3,36.1,721,"Very Vigorous",Cycling,Indoor,01232
+"Stationary bike (elite effort, >325 W)",16.3,57.1,1141,"Very Vigorous",Cycling,Indoor,01248
+"Cycling HIIT (intervals)",8.8,30.8,616,Vigorous,Cycling,Spin/HIIT/Virtual,01305
+"Virtual cycling (interactive / ergometer)",8.8,30.8,616,Vigorous,Cycling,Spin/HIIT/Virtual,01290
+"Spin class",9,31.5,630,"Very Vigorous",Cycling,Spin/HIIT/Virtual,01270
+Unicycling,5,17.5,350,Moderate,Cycling,Other,01070
+BMX,8.5,29.8,595,Vigorous,Cycling,Other,01008
+"Weight training (multiple exercises, moderate volume)",3.5,12.3,245,Moderate,Exercise,Strength,02054
+"Strength training (compound lifts: squat/deadlift)",5,17.5,350,Moderate,Exercise,Strength,02052
+"Strength training (supersets / circuit style)",5.8,20.3,406,Moderate,Exercise,Strength,02055
+"Weight lifting (vigorous / bodybuilding)",6,21,420,Vigorous,Exercise,Strength,02050
+"Kettlebell swings",9.8,34.3,686,"Very Vigorous",Exercise,Strength,02058
+"Calisthenics (light: core/plank/crunches)",2.8,9.8,196,Light,Exercise,Bodyweight,02024
+"Bodyweight strength (general)",3,10.5,210,Moderate,Exercise,Bodyweight,02056
+"Calisthenics (moderate)",3.8,13.3,266,Moderate,Exercise,Bodyweight,02022
+"Bodyweight strength (high intensity)",6.5,22.8,455,Vigorous,Exercise,Bodyweight,02057
+"Calisthenics (vigorous: burpees/jacks/ropes)",7.5,26.3,525,Vigorous,Exercise,Bodyweight,02020
+"Circuit training (moderate)",5,17.5,350,Moderate,Exercise,Circuit,02035
+"Circuit training (bodyweight)",6,21,420,Vigorous,Exercise,Circuit,02032
+"Circuit training (vigorous, minimal rest)",7.5,26.3,525,Vigorous,Exercise,Circuit,02040
+"HIIT (moderate)",7,24.5,490,Vigorous,Exercise,HIIT,02210
+"HIIT / Tabata (vigorous)",11,38.5,770,"Very Vigorous",Exercise,HIIT,02214
+"Step aerobics (4-inch step / 10 cm)",5.5,19.3,385,Moderate,Exercise,Aerobics,02001
+"Aerobics (general)",7.3,25.6,511,Vigorous,Exercise,Aerobics,02000
+"Step aerobics (6–8 inch step / 15–20 cm)",7.3,25.6,511,Vigorous,Exercise,Aerobics,02002
+"Step aerobics (10–12 inch step / 25–30 cm)",9,31.5,630,"Very Vigorous",Exercise,Aerobics,02003
+"Aerobic dance (low impact)",4.8,16.8,336,Moderate,Exercise,"Dance cardio",02005
+"Jazzercise / dance fitness (general)",6,21,420,Vigorous,Exercise,"Dance cardio",02090
+"Zumba (group class)",6.5,22.8,455,Vigorous,Exercise,"Dance cardio",02310
+"Aerobic dance (high impact)",8,28,560,Vigorous,Exercise,"Dance cardio",02006
+"Elliptical (moderate)",5,17.5,350,Moderate,Exercise,Machines,02048
+"Ski machine (general)",6.8,23.8,476,Vigorous,Exercise,Machines,02080
+"Elliptical (vigorous)",9,31.5,630,"Very Vigorous",Exercise,Machines,02049
+"Stair climber / stair treadmill (general)",9.3,32.6,651,"Very Vigorous",Exercise,Machines,02065
+"Ski erg (double poling, moderate)",10.5,36.8,735,"Very Vigorous",Exercise,Machines,02082
+"Ski erg (double poling, max effort)",18,63,1260,"Very Vigorous",Exercise,Machines,02084
+"Rowing machine (<100 W, moderate)",5,17.5,350,Moderate,Exercise,Rowing,02071
+"Rowing machine (100–149 W, vigorous)",7.5,26.3,525,Vigorous,Exercise,Rowing,02072
+"Rowing machine (150–199 W, very vigorous)",11,38.5,770,"Very Vigorous",Exercise,Rowing,02073
+"Rowing machine (≥200 W, elite effort)",14,49,980,"Very Vigorous",Exercise,Rowing,02074
+"Jump rope (general)",11,38.5,770,"Very Vigorous",Exercise,"Jump rope",02068
+"Stretching (mild)",2.3,8,161,Light,Exercise,Mobility,02101
+"Pilates (mat / traditional)",1.8,6.3,126,Light,Exercise,Pilates,02103
+"Pilates (general)",2.8,9.8,196,Light,Exercise,Pilates,02105
+"Yoga (general / hatha)",2.3,8,161,Light,Exercise,Yoga,02150
+"Yoga (vinyasa)",2.7,9.5,189,Light,Exercise,Yoga,02185
+"Yoga (hot)",3,10.5,210,Moderate,Exercise,Yoga,02155
+"Yoga (power)",4,14,280,Moderate,Exercise,Yoga,02160
+"Swimming backstroke (easy / recreational)",4.8,16.8,336,Moderate,"Water Sports","Swimming (pool)",18255
+"Swimming breaststroke (easy / recreational)",5.3,18.6,371,Moderate,"Water Sports","Swimming (pool)",18265
+"Swimming freestyle (slow pace / technique)",5.8,20.3,406,Moderate,"Water Sports","Swimming (pool)",18292
+"Swimming laps (freestyle, easy / recreational)",5.8,20.3,406,Moderate,"Water Sports","Swimming (pool)",18240
+"Swimming (leisure, not laps)",6,21,420,Vigorous,"Water Sports","Swimming (pool)",18310
+"Swimming sidestroke (general)",7,24.5,490,Vigorous,"Water Sports","Swimming (pool)",18320
+"Swimming freestyle (medium pace)",8,28,560,Vigorous,"Water Sports","Swimming (pool)",18290
+"Swimming backstroke (training / hard)",9.5,33.3,665,"Very Vigorous","Water Sports","Swimming (pool)",18250
+"Swimming freestyle (fast / vigorous)",9.8,34.3,686,"Very Vigorous","Water Sports","Swimming (pool)",18230
+"Swimming breaststroke (training / hard)",10.3,36.1,721,"Very Vigorous","Water Sports","Swimming (pool)",18260
+"Swimming butterfly (hard)",13.8,48.3,966,"Very Vigorous","Water Sports","Swimming (pool)",18270
+"Swimming (open water: lake/ocean/river)",6,21,420,Vigorous,"Water Sports","Swimming (open water)",18300
+"Open water swimming (race effort / 5K)",10.5,36.8,735,"Very Vigorous","Water Sports","Swimming (open water)",18285
+"Canoeing (light pace)",2.8,9.8,196,Light,"Water Sports","Paddle sports",18040
+"Canoeing (easy / for pleasure)",3.5,12.3,245,Moderate,"Water Sports","Paddle sports",18070
+"Kayaking (moderate)",5,17.5,350,Moderate,"Water Sports","Paddle sports",18100
+"Whitewater rafting (general)",5,17.5,350,Moderate,"Water Sports","Paddle sports",18370
+"Canoeing (moderate pace)",5.8,20.3,406,Moderate,"Water Sports","Paddle sports",18050
+"Stand up paddleboarding (SUP), general",6.5,22.8,455,Vigorous,"Water Sports","Paddle sports",18224
+"Surfing (general)",3,10.5,210,Moderate,"Water Sports","Board sports",18220
+"Windsurfing (leisure)",5,17.5,350,Moderate,"Water Sports","Board sports",18380
+"Surfing (paddling)",6.8,23.8,476,Vigorous,"Water Sports","Board sports",18221
+"Windsurfing / kitesurfing (hard effort)",11,38.5,770,"Very Vigorous","Water Sports","Board sports",18385
+Snorkeling,5,17.5,350,Moderate,"Water Sports","Diving & snorkeling",18210
+"Scuba diving (light effort)",5.3,18.6,371,Moderate,"Water Sports","Diving & snorkeling",18202
+"Scuba diving (moderate effort)",5.8,20.3,406,Moderate,"Water Sports","Diving & snorkeling",18204
+"Scuba diving (recreational)",6.8,23.8,476,Vigorous,"Water Sports","Diving & snorkeling",18208
+"Scuba / skindiving (general)",7,24.5,490,Vigorous,"Water Sports","Diving & snorkeling",18200
+"Water walking (easy)",2.5,8.8,175,Light,"Water Sports","Aqua fitness",18367
+"Water aerobics (resistance exercises)",3.8,13.3,266,Moderate,"Water Sports","Aqua fitness",18356
+"Water walking (moderate)",4.8,16.8,336,Moderate,"Water Sports","Aqua fitness",18368
+"Water aerobics (general)",5.5,19.3,385,Moderate,"Water Sports","Aqua fitness",18355
+"Water walking (brisk)",6.8,23.8,476,Vigorous,"Water Sports","Aqua fitness",18369
+"Deep water running (moderate)",7.5,26.3,525,Vigorous,"Water Sports","Aqua fitness",18375
+"Water aerobics (high intensity)",7.5,26.3,525,Vigorous,"Water Sports","Aqua fitness",18358
+"Deep water running (fast)",8.5,29.8,595,Vigorous,"Water Sports","Aqua fitness",18376
+"Water volleyball",3,10.5,210,Moderate,"Water Sports","Water sports",18365
+"Water polo",10,35,700,"Very Vigorous","Water Sports","Water sports",18360
+"Table tennis / ping pong",4,14,280,Moderate,Sports,"Racquet sports",15660
+"Badminton (social / general)",5.5,19.3,385,Moderate,Sports,"Racquet sports",15030
+"Racquetball (general)",7,24.5,490,Vigorous,Sports,"Racquet sports",15530
+"Squash (general)",7.3,25.6,511,Vigorous,Sports,"Racquet sports",15652
+"Badminton (match play / competitive)",9,31.5,630,"Very Vigorous",Sports,"Racquet sports",15025
+"Racquetball (competitive)",10,35,700,"Very Vigorous",Sports,"Racquet sports",15520
+"Squash (competitive)",12,42,840,"Very Vigorous",Sports,"Racquet sports",15650
+"Tennis (doubles)",4.5,15.8,315,Moderate,Sports,Tennis,15685
+"Tennis (general / moderate)",6.8,23.8,476,Vigorous,Sports,Tennis,15675
+"Tennis (singles)",8,28,560,Vigorous,Sports,Tennis,15690
+"Basketball (shooting practice)",5,17.5,350,Moderate,Sports,Basketball,15070
+"Basketball (general)",7.5,26.3,525,Vigorous,Sports,Basketball,15055
+"Basketball (game)",8,28,560,Vigorous,Sports,Basketball,15040
+"Soccer (casual / general)",7,24.5,490,Vigorous,Sports,Soccer,15610
+"Soccer (competitive)",9.5,33.3,665,"Very Vigorous",Sports,Soccer,15605
+"Flag / touch football (light)",4,14,280,Moderate,Sports,Football,15232
+"Flag / touch football (general)",8,28,560,Vigorous,Sports,Football,15230
+"Field hockey",7.8,27.3,546,Vigorous,Sports,Hockey,15350
+"Ice hockey (general)",8,28,560,Vigorous,Sports,Hockey,15360
+"Ice hockey (competitive)",10,35,700,"Very Vigorous",Sports,Hockey,15362
+Kickboxing,7.3,25.6,511,Vigorous,Sports,"Martial arts",15457
+"Martial arts (moderate–vigorous practice)",10.3,36.1,721,"Very Vigorous",Sports,"Martial arts",15430
+Judo,11.3,39.6,791,"Very Vigorous",Sports,"Martial arts",15433
+"Taekwondo (combat simulation)",14.3,50.1,1001,"Very Vigorous",Sports,"Martial arts",15432
+"Boxing (sparring)",7.8,27.3,546,Vigorous,Sports,Boxing,15120
+"Boxing bag (hard pace)",8.5,29.8,595,Vigorous,Sports,Boxing,15115
+"Boxing (in ring / general)",12.3,43.1,861,"Very Vigorous",Sports,Boxing,15100
+"Rock climbing (low–moderate difficulty)",5.8,20.3,406,Moderate,Sports,Climbing,15537
+"Rock climbing (high difficulty)",7.3,25.6,511,Vigorous,Sports,Climbing,15535
+"Bouldering (free boulder)",8.8,30.8,616,Vigorous,Sports,Climbing,15534
+"Skateboarding (general)",5,17.5,350,Moderate,Sports,"Skating & boards",15580
+"Rollerblading (recreational pace)",7.5,26.3,525,Vigorous,Sports,"Skating & boards",15591
+"Rollerblading (moderate pace)",9.8,34.3,686,"Very Vigorous",Sports,"Skating & boards",15592
+"Volleyball (recreational)",3,10.5,210,Moderate,Sports,Volleyball,15720
+"Volleyball (competitive, indoor)",6,21,420,Vigorous,Sports,Volleyball,15711
+"Volleyball (beach)",8,28,560,Vigorous,Sports,Volleyball,15725
+"Track & field (throws: shot/discus/hammer)",4,14,280,Moderate,Sports,"Track & field",15732
+"Track & field (jumps: long/high/pole vault)",6,21,420,Vigorous,Sports,"Track & field",15733
+"Track & field (steeplechase / hurdles)",10,35,700,"Very Vigorous",Sports,"Track & field",15734
+"Golf (power cart)",3.5,12.3,245,Moderate,Sports,Golf,15290
+"Golf (walking, carrying clubs)",4.3,15,301,Moderate,Sports,Golf,15265
+"Golf (walking, pulling clubs)",4.5,15.8,315,Moderate,Sports,Golf,15285
+"Billiards / pool",2.5,8.8,175,Light,Sports,Leisure,15080
+Darts,2.5,8.8,175,Light,Sports,Leisure,15180
+"Bowling (bowling alley)",3.8,13.3,266,Moderate,Sports,Leisure,15092
+"Ice skating (easy pace, ≤14.5 km/h / ≤9 mph)",5.5,19.3,385,Moderate,Winter,"Ice skating",19020
+"Ice skating (general)",7,24.5,490,Vigorous,Winter,"Ice skating",19030
+"Ice skating (fast, >14.5 km/h / >9 mph, non-competitive)",9,31.5,630,"Very Vigorous",Winter,"Ice skating",19040
+"Speed skating (competitive)",13.8,48.3,966,"Very Vigorous",Winter,"Ice skating",19050
+"Ice dancing (vigorous)",14,49,980,"Very Vigorous",Winter,"Ice skating",19018
+"Cross-country skiing (easy / ski walking)",6.8,23.8,476,Vigorous,Winter,"Cross-country skiing",19080
+"Cross-country skiing (moderate pace)",8.5,29.8,595,Vigorous,Winter,"Cross-country skiing",19090
+"Cross-country skiing (high-intensity training)",9.5,33.3,665,"Very Vigorous",Winter,"Cross-country skiing",19115
+"Cross-country skiing (vigorous pace)",11.3,39.6,791,"Very Vigorous",Winter,"Cross-country skiing",19100
+"Cross-country skiing (skating technique)",13.3,46.6,931,"Very Vigorous",Winter,"Cross-country skiing",19135
+"Cross-country skiing (uphill / hard snow, very hard)",15.5,54.3,1085,"Very Vigorous",Winter,"Cross-country skiing",19130
+"Downhill skiing / snowboarding (light, active time only)",4.3,15,301,Moderate,Winter,"Downhill skiing & snowboarding",19150
+"Downhill skiing / snowboarding (moderate, active time only)",6.3,22.1,441,Vigorous,Winter,"Downhill skiing & snowboarding",19160
+"Snowboarding (recreational, mountain pace)",7.5,26.3,525,Vigorous,Winter,"Downhill skiing & snowboarding",19201
+"Downhill skiing / snowboarding (vigorous, active time only)",8,28,560,Vigorous,Winter,"Downhill skiing & snowboarding",19170
+"Skiing (slalom)",9.3,32.6,651,"Very Vigorous",Winter,"Downhill skiing & snowboarding",19146
+"Snowshoeing (moderate)",5.3,18.6,371,Moderate,Winter,Snowshoeing,19190
+"Snowshoeing (vigorous)",10,35,700,"Very Vigorous",Winter,Snowshoeing,19192
+"Sledding / tobogganing / luge (general)",7,24.5,490,Vigorous,Winter,Sledding,19180
+"Using a snow blower (walking & pushing)",2.5,8.8,175,Light,Winter,"Winter chores",19260
+"Snow shoveling (moderate)",5.3,18.6,371,Moderate,Winter,"Winter chores",19252
+"Snow shoveling (vigorous)",7.5,26.3,525,Vigorous,Winter,"Winter chores",19254
