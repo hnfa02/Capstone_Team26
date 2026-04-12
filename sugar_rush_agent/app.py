@@ -11,7 +11,7 @@ agents = {"main": agents['main'], "safety": agents['safety'], "formatter": agent
 
 st.set_page_config(page_title="Diabetes AI Coach", layout="wide")
 
-st.title("🩺 Diabetes AI Coach")
+st.title("🩺 Anti Sugar Rush: Your Personalized Diabetes AI Assistant")
 
 # ---------------- INPUT FORM ----------------
 with st.form("user_input_form"):
