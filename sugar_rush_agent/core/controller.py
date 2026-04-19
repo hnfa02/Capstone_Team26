@@ -27,114 +27,124 @@ async def run_main_with_safety(user_input, agents, max_retries=2):
     SafetyAgent = agents["safety"]
     FormatterAgent = agents["formatter"]
 
-    # Create runners
-    SafetyRunner = InMemoryRunner(agent=SafetyAgent, plugins=[LoggingPlugin(), token_counter])
-    FormatterRunner = InMemoryRunner(agent=FormatterAgent, plugins=[LoggingPlugin(), token_counter])
+
+    SafetyAgentrunner    = InMemoryRunner(agent=SafetyAgent,    plugins=[LoggingPlugin(), token_counter])
+    FormatterAgentRunner = InMemoryRunner(agent=FormatterAgent, plugins=[LoggingPlugin(), token_counter])
 
     token_counter.reset()
+    run_timestamp = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    run_start     = datetime.utcnow()
 
-    # Timing
-    run_start = datetime.utcnow()
-    run_timestamp = run_start.isoformat()
-
-    # Loop state
-    attempt = 0
-    violations = []
-    clean_summary = None
-    final_output = None
-    final_is_safe = False
+    attempt                  = 0
+    violations               = []
+    corrected_recommendation = None
+    clean_summary            = None
+    final_is_safe            = False
+    final_output             = None
+    result                   = None
 
     while attempt < max_retries:
-        print(f"\n===== ATTEMPT {attempt + 1} =====")
 
-        # Create fresh Main runner each attempt
-        MainRunner = InMemoryRunner(agent=Main_agent, plugins=[LoggingPlugin(), token_counter])
+        attempt += 1      # ← increment FIRST so attempt always reflects
+                          #   the actual number of attempts made
+        print(f"\n========== ATTEMPT {attempt} ==========")
 
-        # Payload
-        payload = {
-            "user_input": user_input,
-            "previous_output": clean_summary if attempt > 0 else None,
-            "violations": violations if attempt > 0 else []
+        MainAgentrunner = InMemoryRunner(agent=Main_agent, plugins=[LoggingPlugin(), token_counter])
+
+        main_payload = {
+            "user_input":      user_input,
+            "previous_output": clean_summary if attempt > 1 else None,
+            "violations":      violations    if attempt > 1 else []
         }
 
-        # ---------------- RUN MAIN AGENT ----------------
-        raw_main = await MainRunner.run_debug(json.dumps(payload))
-        main_text = extract_text_from_debug(raw_main)
+        raw_response = await MainAgentrunner.run_debug(json.dumps(main_payload))
+        main_text    = extract_text_from_debug(raw_response)
 
         try:
             main_json = json.loads(main_text)
-        except:
+        except Exception:
             main_json = {"Output_Summary": main_text}
 
-        clean_summary = extract_clean_summary(main_json)
-        final_output = clean_summary
-
         print("\n--- MAIN OUTPUT ---")
-        print(json.dumps(clean_summary, indent=2))
+        print(json.dumps(main_json, indent=2))
 
-        # ---------------- RUN SAFETY AGENT ----------------
+        clean_summary = extract_clean_summary(main_json)
+        final_output  = clean_summary
+
+        print("\n--- CLEAN SUMMARY SENT TO SAFETY ---")
+        print(json.dumps(clean_summary, indent=2) if isinstance(clean_summary, dict) else clean_summary)
+
         safety_payload = json.dumps({"Output_Summary": clean_summary})
-        raw_safety = await SafetyRunner.run_debug(safety_payload)
-        safety_text = extract_text_from_debug(raw_safety)
+        raw_safety     = await SafetyAgentrunner.run_debug(safety_payload)
+        safety_text    = extract_text_from_debug(raw_safety)
+
+        print("\n--- RAW SAFETY TEXT ---")
+        print(safety_text)
 
         try:
             safety_text_clean = re.sub(r"```json|```", "", safety_text).strip()
-            safety_json = json.loads(safety_text_clean)
-        except:
-            safety_json = {
-                "safe": False,
-                "violations": ["Safety parsing failed"]
+            safety_result     = json.loads(safety_text_clean)
+        except Exception:
+            safety_result = {
+                "safe":       False,
+                "violations": ["Could not parse safety agent response"],
             }
 
         print("\n--- SAFETY OUTPUT ---")
-        print(json.dumps(safety_json, indent=2))
+        print(json.dumps(safety_result, indent=2))
 
-        safe = safety_json.get("safe", False)
-        new_violations = safety_json.get("violations", [])
+        safe           = safety_result.get("safe", False)
+        new_violations = safety_result.get("violations", [])
 
-        # Detect stuck loop
-        if not safe and new_violations == violations and attempt > 0:
-            return {
-                "status": "failed",
-                "reason": "Repeated violations",
-                "violations": new_violations,
+        # ── Check if violations are repeating (agent is stuck) ────────────────
+        if not safe and new_violations == violations and attempt > 1:
+            final_is_safe = False
+            result = {
+                "status":      "failed",
+                "reason":      "Repeated violations — agent is stuck",
+                "attempts":    attempt,    # ← always correct now
+                "violations":  new_violations,
                 "last_output": clean_summary
             }
+            break
 
         violations = new_violations
 
-        # ✅ SAFE → FORMAT + RETURN
+        # ── Safe: run formatter and return ────────────────────────────────────
         if safe:
             fmt_payload = json.dumps({"validated_output": clean_summary})
-            raw_fmt = await FormatterRunner.run_debug(fmt_payload)
-            readable = extract_text_from_debug(raw_fmt)
+            raw_fmt     = await FormatterAgentRunner.run_debug(fmt_payload)
+            readable    = extract_text_from_debug(raw_fmt)
 
             final_is_safe = True
-            result = readable
+            result = {
+                "status":            "safe",
+                "attempts":          attempt,    # ← always correct now
+                "readable_output":   readable,
+                "structured_output": clean_summary
+            }
             break
 
-        attempt += 1
-
-    else:
-        # Max retries hit
+    # ── Max retries exhausted ─────────────────────────────────────────────────
+    if result is None:
+        final_is_safe = False
         result = {
-            "status": "failed",
-            "reason": "Max retries exceeded",
-            "violations": violations,
+            "status":      "failed",
+            "reason":      "Max retries exceeded",
+            "attempts":    attempt,        # ← correct: equals MAX_RETRIES
+            "violations":  violations,
             "last_output": clean_summary
         }
 
-    # ---------------- LOGGING ----------------
     duration = (datetime.utcnow() - run_start).total_seconds()
-
     append_csv_log(
-        timestamp=run_timestamp,
-        duration_seconds=duration,
-        input_tokens=token_counter.input_tokens,
-        output_tokens=token_counter.output_tokens,
-        is_safe=final_is_safe,
-        attempts=attempt + 1,
-        main_agent_output=final_output
+        timestamp         = run_timestamp,
+        duration_seconds  = duration,
+        input_tokens      = token_counter.input_tokens,
+        output_tokens     = token_counter.output_tokens,
+        is_safe           = final_is_safe,
+        attempts          = result["attempts"],    # ← read from result dict
+        main_agent_output = final_output
     )
 
     return result

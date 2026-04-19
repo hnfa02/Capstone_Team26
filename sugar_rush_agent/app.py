@@ -18,8 +18,6 @@ with st.form("user_input_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        min_past = st.number_input("Min Past Glucose", value=90)
-        max_past = st.number_input("Max Past Glucose", value=200)
         current_glucose = st.number_input("Current Glucose", value=165)
 
         last_meal = st.text_input("Last Meal", "Breakfast at 7:00 AM ET")
@@ -39,15 +37,13 @@ with st.form("user_input_form"):
         oral_med = st.selectbox("Oral Medication", ["pre-meal", "none"])
         insulin = st.selectbox("Insulin", ["yes", "no"])
         long_insulin = st.text_input("Long Acting Insulin", "Yes, every night 9PM ET")
-        glp1 = st.selectbox("GLP-1", ["yes", "no"])
+        glp1 = st.text_input("GLP-1", "Yes, weekly on Saturdays")
 
     submit = st.form_submit_button("Run AI Coach")
 
 # ---------------- RUN ----------------
 if submit:
     user_input = f"""
-    min_past = {min_past}
-    max_past = {max_past}
     current_glucose = {current_glucose}
 
     last_meal = {last_meal}
@@ -73,4 +69,4 @@ if submit:
 
     st.success("Done!")
 
-    st.text_area("AI Recommendation", result, height=500)
+    st.text_area("AI Recommendation", result['readable_output'], height=500)
