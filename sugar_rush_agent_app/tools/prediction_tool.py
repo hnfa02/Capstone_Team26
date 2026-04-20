@@ -4,6 +4,7 @@ import joblib
 import pandas as pd
 import numpy as np
 import random
+from config.settings import model_path, user_history_path
 
 # ─── INTERPOLATION: to create reading for every 15 min using the current and 1 hour prediction glucose ────────────────────────────────────────────────────────────
 
@@ -36,7 +37,7 @@ def interpolate_to_15min(current_glucose: float, predicted_glucose: float) -> li
 
     return points   # [+15min, +30min, +45min, +60min]
 
-def predict_glucose(user_input, history_path="models/user_history.csv", model_path="models/all_models.pkl", user_id='2405'):
+def predict_glucose(user_input, history_path=user_history_path, model_path=model_path, user_id='2405'):
     """
     AI Agent Tool: Predict glucose for next 60 minutes.
 
