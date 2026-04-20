@@ -1,6 +1,7 @@
 # Gen AI Tools (ChatGPT used)
 from google.adk.tools import AgentTool
 import pandas as pd
+from config.settings import met_data_path
 
 # Tools for Exercise Agent
 
@@ -52,7 +53,7 @@ def pre_meal_strategy(upcoming_meal_carbs):
         }
 
 def search_exercise_by_intensity(intensity: str) -> list:
-    df = pd.read_csv("data/traincalc-met-values-latest.csv")
+    df = pd.read_csv(met_data_path)
     filtered = df[df["Intensity"] == intensity]
     return filtered[["Description", "MET"]].to_dict(orient="records")
 
