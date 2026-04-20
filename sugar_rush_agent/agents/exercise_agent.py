@@ -3,6 +3,8 @@ from google.adk.models.google_llm import Gemini
 from config.settings import RETRY_CONFIG as retry_config
 from tools.exercise_agent_tool import get_exercise_recommendation
 
+# Exercise Sub-Agent: recommends exercises based on glucose levels and meal information
+
 ExerciseAgent = Agent(
     name='ExerciseRecommenderAgent',
     model=Gemini(model='gemini-2.5-flash-lite', retry_options=retry_config),

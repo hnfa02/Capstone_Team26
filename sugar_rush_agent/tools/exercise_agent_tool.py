@@ -1,7 +1,8 @@
-# ExerciseAgent
 # Gen AI Tools (ChatGPT used)
 from google.adk.tools import AgentTool
 import pandas as pd
+
+# Tools for Exercise Agent
 
 def get_exercise_intensity(glucose_level:int) -> list:
     """Returns the recommended exercise intensity based on the glucose level."""

@@ -45,8 +45,8 @@ async def run_main_with_safety(user_input, agents, max_retries=2):
 
     while attempt < max_retries:
 
-        attempt += 1      # ← increment FIRST so attempt always reflects
-                          #   the actual number of attempts made
+        attempt += 1      
+        
         print(f"\n========== ATTEMPT {attempt} ==========")
 
         MainAgentrunner = InMemoryRunner(agent=Main_agent, plugins=[LoggingPlugin(), token_counter])

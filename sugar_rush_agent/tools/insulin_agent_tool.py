@@ -1,4 +1,4 @@
-#InsulinAgent
+#Insulin Agent Tools
 def get_insulin_dose(glucose_level: int) -> dict:  
     """Returns the recommended insulin dose based on the glucose level."""
     if glucose_level < 151:

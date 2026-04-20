@@ -2,11 +2,11 @@
 import os
 import requests
 
+# Meal Agent Tools
+
 FOOD_API_KEY = os.getenv("Food_API")
-#@trace_execution`"search_food_by_carbs")
+
 def search_food_by_carbs(food_name: str, max_carbs: float):
-    
-    #MealAgent_logger.info(f"Tool called: search_food_by_carbs | food={food_name} | max_carbs={max_carbs}")
 
     url = "https://api.nal.usda.gov/fdc/v1/foods/search"
 

@@ -1,9 +1,9 @@
-##Adding a Formatter Agent to generate a readable output
 from google.adk.agents import Agent
 from google.adk.models.google_llm import Gemini
 from config.settings import RETRY_CONFIG as retry_config
 
-##Adding a Formatter Agent to generate a readable output
+## Formatter Agent to generate a readable output
+
 FormatterAgent = Agent(
     name="FormatterAgent",
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=retry_config),

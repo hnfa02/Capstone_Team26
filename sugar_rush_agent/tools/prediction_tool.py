@@ -1,18 +1,9 @@
 # prediction tool for the Main agent
-import joblib
 # Gen AI Tools (ChatGPT used)
+import joblib
 import pandas as pd
-from sklearn.linear_model import LinearRegression
-from models.cgm_model import DummyCGMModel
 import numpy as np
 import random
-
-def predict_glucose(min_past,max_past):
-
-    model = joblib.load("models/dummy_cgm_model.joblib")
-    prediction = model.predict(min_past, max_past) # min max of past 24 values
-
-    return prediction
 
 # ─── INTERPOLATION: to create reading for every 15 min using the current and 1 hour prediction glucose ────────────────────────────────────────────────────────────
 

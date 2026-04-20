@@ -3,7 +3,9 @@ from google.adk.models.google_llm import Gemini
 from config.settings import RETRY_CONFIG as retry_config
 from tools.meal_agent_tool import search_food_by_carbs
 
-#Meal agent
+#Meal Sub-Agent: recommends meals based on glucose levels, meal timing, and diet preferences.
+#  It uses the search_food_by_carbs tool to find suitable food options that align with the user's dietary needs and glucose management goals. 
+
 
 MealAgent =  Agent(
 name= "MealRecommenderAgent",

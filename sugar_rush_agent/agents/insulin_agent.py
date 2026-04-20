@@ -3,6 +3,9 @@ from google.adk.models.google_llm import Gemini
 from config.settings import RETRY_CONFIG as retry_config
 from tools.insulin_agent_tool import get_insulin_dose
 
+# Insulin Sub-Agent: provides insulin dosage recommendations based on current glucose levels and meal timing. 
+# It uses the get_insulin_dose tool to determine the appropriate dosage and always responds with a clear recommendation for the patient.
+
 InsulinAgent = Agent(
     name='InsulinRecommenderAgent',
     model=Gemini(model='gemini-2.5-flash-lite', retry_options=retry_config),

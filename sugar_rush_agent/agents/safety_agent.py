@@ -1,7 +1,10 @@
 from google.adk.agents import Agent
 from google.adk.models.google_llm import Gemini
 from config.settings import RETRY_CONFIG as retry_config
-#SafetyGuardAgent
+
+# Safety Sub-Agent: evaluates the output of Main_agent for clinical safety and logical consistency based on comprehensive rules 
+# covering insulin dosing, meal recommendations, exercise advice, medication alerts, diet compliance, and overall logical consistency. 
+# It provides a clear safety assessment and actionable feedback for any identified issues.
 
 SafetyAgent = Agent(
     name="SafetyGuard",
