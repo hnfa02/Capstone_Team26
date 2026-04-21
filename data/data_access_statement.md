@@ -10,3 +10,4 @@
 3. Exercise MET Dataset: Journal of Sport and Health Science 2024 Adult Compendium of Physical Activities  
    * Source: [https://traincalc.com/met-values](https://traincalc.com/met-values)  
    * Dataset may be used with proper citation of Compendium source
+  
