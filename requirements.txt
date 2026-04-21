@@ -1,0 +1,11 @@
+streamlit
+google-genai
+google-generativeai
+google-adk
+google-cloud-secret-manager
+scikit-learn
+pandas
+numpy
+xgboost
+matplotlib
+requests
