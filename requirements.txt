@@ -9,3 +9,6 @@ numpy
 xgboost
 matplotlib
 requests
+joblib 
+json 
+re
