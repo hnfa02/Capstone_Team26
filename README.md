@@ -21,7 +21,7 @@ For our MADS Capstone Project, we've developed an AI system that provides person
 ```
 .
 ├── Agents Code - Jupyter Notebook/
-│   ├── MADS699-Capstone-Project - Team 20.ipynb   # jupyter notebook to build and run agent
+│   ├── MADS699-Capstone-Project - Team 26.ipynb   # jupyter notebook to build and run agent
 │   ├── all_models.pkl                             # glucose prediction model used
 │   ├── traincalc-met-values-latest.csv            # MET Data
 │   └── user_history.csv                           # user glucose history data
@@ -73,6 +73,10 @@ For this project, you will need API keys for USDA FoodCentral API as well as Gem
 * Gemini API key can be obtained through Google Cloud Platform or Google AI Studio
 
 ### Jupyter Notebooks
+
+Glucose Prediction Model Prerequisite:
+* We were unable to save glucose dataset in github as file size was too large, glucose dataset can be found in source linked in data_access_statement.md file
+
 For AI Agent Framework + Eval and Testing Pipeline as well as Glucose Prediction Model, open desired jupyter notebook and run notebook
 
 ### Streamlit App Usage
